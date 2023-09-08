@@ -81,3 +81,11 @@ In order to complete this project, you'll need to use these tools:
   * `Customer_trusted_to_curated.py`: This script using a join on customer_trusted and accelerometer_landing, filters the customers with Accelerometer readings and have agreed to share data with researchers and transfers customer data from the 'trusted' to 'curated' zones.<br>
   * `trainer_trusted_to_curated.py`: This script is used to create an aggregated table that has each of the Step Trainer Readings, and the associated accelerometer reading data for the same timestamp, but only for customers who have agreed to share their data.<br>
 
+## Process Result
+
+1. Customer Landing Table:
+   ![Alt text](https://github.com/PhilippeMitch/STEDI-Human-Balance-Analytics/blob/main/Images/customer_landing.jpg)<br>
+2. Accelerometer Landing Table
+   ![Alt text](https://github.com/PhilippeMitch/STEDI-Human-Balance-Analytics/blob/main/Images/accelerometer_landing.jpg)<br>
+3. Customer Trusted Table
+    ![Alt text](https://github.com/PhilippeMitch/STEDI-Human-Balance-Analytics/blob/main/Images/customer_trusted_1.jpg)<br>
