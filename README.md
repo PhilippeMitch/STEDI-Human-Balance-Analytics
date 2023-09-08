@@ -72,10 +72,10 @@ In order to complete this project, you'll need to use these tools:
 * AWS S3
 
 ## Project files
-`customer_landing_to_trusted.py`: 
-`accelerometer_landing_to_trusted_zone.py`: 
-`customer_landing.sql`: 
-`accelerometer_landing.sql`:
-`Customer_trusted_to_curated.py`:
-`trainer_trusted_to_curated.py`:
+`customer_landing_to_trusted.py`: This script filters for customers who have agreed to share data with researchers and transfers customer data from the 'landing' and store those data to 'trusted' zones.<br>
+`accelerometer_landing_to_trusted_zone.py`: This script use a join on customer_trusted and accelerometer_landing, filters the Accelerometer readings from customers who have agreed to share data with researchers and transfers accelerometer data from the 'landing' to 'trusted' zones.<br>
+`customer_landing.sql`: This script is to create a Glue tables for the customer landing zones.<br>
+`accelerometer_landing.sql`: This script is to create a Glue tables for the accelerometer landing zones.<br>
+`Customer_trusted_to_curated.py`: This script using a join on customer_trusted and accelerometer_landing, filters the customers with Accelerometer readings and have agreed to share data with researchers and transfers customer data from the 'trusted' to 'curated' zones.<br>
+`trainer_trusted_to_curated.py`: This script is used to create an aggregated table that has each of the Step Trainer Readings, and the associated accelerometer reading data for the same timestamp, but only for customers who have agreed to share their data.<br>
 
